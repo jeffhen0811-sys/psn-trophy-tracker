@@ -1,0 +1,28 @@
+{
+  "name": "psn-trophy-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Exportação segura de troféus PSN",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "trophies": "tsx src/cli.ts",
+    "auth": "tsx src/cli.ts auth",
+    "games": "tsx src/cli.ts games",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "psn-api": "2.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "license": "MIT"
+}

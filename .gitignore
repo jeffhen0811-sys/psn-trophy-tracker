@@ -1,0 +1,38 @@
+# Dependencies and generated build files
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Personal trophy exports
+exports/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+.psn-auth/
+.config/psn-trophy-tracker/
+tokens.json
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+
+# Logs, coverage and caches
+*.log
+npm-debug.log*
+coverage/
+.nyc_output/
+.cache/
+.tmp/
+tmp/
+
+# Editor and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
